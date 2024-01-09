@@ -1,111 +1,43 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600&display=swap');
-
-h{
-    font-family: 'Karla', sans-serif;
-    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body {font-family: 'Karla', sans-serif;
-  }
-
-
-h1{
-    text-align: center; 
-    color : black;
-}
-h1 a{
-    font-size: 40px; 
-    color: black; 
-    text-decoration: none; 
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
-h1 a:hover{
-    color: gray; 
-
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-main{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-/* p{
-    margin-left: px;
-    margin-left: 100px;
-
-} */
-
-/* img{
-    max-width: 50%;
-    max-height: 50%
-    } */
-
-nav{
-    text-align: center;
-    
-}
-nav a{
-    font-size: 20px; 
-    margin-right: 20px;
-    margin-left: 20px;
-    color: black; 
-    text-decoration: none; 
-   
+nav li {
+  display: inline;
+  margin-right: 10px;
 }
 
-nav a:hover{
-    color: gray; 
-
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #555;
 }
 
-code {
-    background-color: #f0f0f0; /* Set the background color to gray */
-    padding: 2px 4px; /* Add some padding for better readability */
-    border-radius: 4px; /* Optional: Add rounded corners */
-  }
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
 
-.card {
-      display: flex;
-      max-width: 600px;
-      margin: 20px auto;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .card-image {
-      flex: 1;
-      overflow: hidden;
-    }
-
-    .card-image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .card-content {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .card-content h2 {
-      margin-top: 0;
-    }
-
-    .card-action {
-      padding: 20px;
-      background-color: #f5f5f5;
-      text-align: right;
-    }
-
-    .card-action a {
-      text-decoration: none;
-      color: #2196F3;
-      font-weight: bold;
-    }
-
-
-
+/* Style for active tab */
+.tab-content:target {
+  display: block;
+}
